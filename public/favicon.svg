@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- 背景圆形 -->
+  <circle cx="32" cy="32" r="30" fill="#D4AF37"/>
+
+  <!-- 天平底座 -->
+  <rect x="30" y="45" width="4" height="12" fill="#1a1a1a"/>
+  <rect x="20" y="55" width="24" height="3" rx="1.5" fill="#1a1a1a"/>
+
+  <!-- 天平横杆 -->
+  <rect x="12" y="26" width="40" height="2" rx="1" fill="#1a1a1a"/>
+
+  <!-- 天平中心支柱 -->
+  <rect x="30.5" y="28" width="3" height="18" fill="#1a1a1a"/>
+
+  <!-- 左边托盘 -->
+  <path d="M 10 28 L 8 34 L 24 34 L 22 28 Z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="10" y1="28" x2="22" y2="28" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- 右边托盘 -->
+  <path d="M 42 28 L 40 34 L 56 34 L 54 28 Z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="42" y1="28" x2="54" y2="28" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- 左边链条 -->
+  <line x1="16" y1="24" x2="16" y2="28" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- 右边链条 -->
+  <line x1="48" y1="24" x2="48" y2="28" stroke="#1a1a1a" stroke-width="1"/>
+</svg>

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Legal theme - Light mode (professional blue and gold) */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary: Deep legal blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Professional slate */
+    --secondary: 215 16% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent: Justice gold */
+    --accent: 43 96% 56%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for legal theme */
+    --legal-gold: 43 96% 56%;
+    --legal-blue: 221 83% 53%;
+    --legal-blue-dark: 222 47% 11%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--legal-blue)) 0%, hsl(var(--legal-blue-dark)) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(var(--legal-gold)) 0%, hsl(43 96% 65%) 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--legal-gold) / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--legal-blue) / 0.3);
+  }
+
+  .dark {
+    /* Legal theme - Dark mode (courtroom aesthetic) */
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary: Bright legal gold */
+    --primary: 43 96% 56%;
+    --primary-foreground: 222 47% 11%;
+
+    /* Secondary: Muted slate blue */
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent: Justice gold */
+    --accent: 43 96% 56%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 43 96% 56%;
+
+    /* Custom tokens for dark legal theme */
+    --legal-gold: 43 96% 56%;
+    --legal-blue: 221 83% 53%;
+    --legal-blue-dark: 222 47% 11%;
+    
+    /* Gradients for dark mode */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--legal-blue-dark)) 0%, hsl(222 47% 5%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(var(--legal-gold)) 0%, hsl(43 96% 65%) 100%);
+    
+    /* Shadows for dark mode */
+    --shadow-glow: 0 0 40px hsl(var(--legal-gold) / 0.2);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--legal-gold) / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
